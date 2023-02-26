@@ -27,6 +27,11 @@ const ChannelCard = ({channelDetail}) => {
       {channelDetail?.snippet?.title}
 
     </Typography>
+    {channelDetail?.statistics?.subsriberCount && (
+      <Typography>
+        {parseInt(channelDetail?.statstics?.subsriberCount).toLocaleString()}
+      </Typography>
+    )} 
     </Link>
   </Box>
   )

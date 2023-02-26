@@ -22,8 +22,20 @@ useEffect(() => {
     .then((data) => setVideos(data?.items))
     
 }, [id])
+
+
   return (
-    <div>{id}</div>
+    <Box minHeight="95vh">
+      <div style={{
+        background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(83,83,244,1) 35%, rgba(0,212,255,1) 100%)',
+        zIndex: 10,
+        height: '300px'
+      }}
+      
+      />
+<ChannelCard channelDetail={channelDetail}/>
+
+    </Box>
   )
 }
 
